@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10;
+    background-color: #F3D422; /* Warna latar belakang kuning */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px; /* Sesuaikan dengan ukuran logo */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 6px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+/* Animasi elemen hiasan bergerak */
+.decoration {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700; /* Warna emas untuk bintang */
+    border-radius: 50%;
+    animation: moveStar 5s infinite linear;
+}
+

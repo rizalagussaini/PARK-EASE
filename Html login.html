@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PARK EASE - Login</title>
+</head>
+<body>
+    <div class="container">
+        <img src="OIG 5.jpeg" alt="PARK EASE Logo" class="logo">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label for="userType">Login As:</label>
+            <select id="userType" name="userType">
+                <option value="customer">Customer</option>
+                <option value="attendant">Parking Attendant</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+
+            <button type="button" onclick="login()">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register here</a></p>
+            </div>
+
+            <div id="registrationForm" style="display: none;">
+                <h2>Register</h2>
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="registerUsername" required>
+
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+
+                <button type="button" onclick="register()">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
